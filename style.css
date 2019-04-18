@@ -1,0 +1,15 @@
+.beg, .center{
+    display:flex;
+    justify-content:center;
+}
+#book,#movie,#character,#char,.big{
+    display:flex;
+    justify-content:center;
+}
+.charimg{
+    width:75px;
+    height:100px;
+}
+body{
+    background-image:url("superback.jpg");
+}
