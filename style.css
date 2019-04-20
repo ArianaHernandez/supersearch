@@ -1,6 +1,7 @@
 .beg, .center{
     display:flex;
     justify-content:center;
+    color:white;
 }
 #book,#movie,#character,#char,.big{
     display:flex;
@@ -12,4 +13,7 @@
 }
 body{
     background-image:url("superback.jpg");
+    background-size:cover;
+    background-repeat:no-repeat;
+    color:white;
 }
