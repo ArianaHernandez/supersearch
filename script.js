@@ -42,14 +42,14 @@ var theUrl="https://www.omdbapi.com/?t="+searchTerm+"&apikey=d8136773";
     $.ajax({
     url: theUrl,
     method: "GET",
-    success: function(response) {
-        
-  response.forEach(function(x){
-      $("#character").append("<h3>"+x["Title"]+"</h3>");
-console.log(x["Title"]);
-  });
+    success: function(response){
+      $("#movie").append("<h3>"+response["Title"]+"</h3>");
+     $("#movie").append("<p>"+response["Plot"]+"</p>");
+      $("#movie").append("<img class='charimg' src='"+response["Poster"]+"'</img>"); 
+     
     },
     });
 });
 
-});
+
+});//document ready
