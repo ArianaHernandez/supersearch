@@ -3,7 +3,11 @@
     justify-content:center;
     color:white;
 }
-#book,#movie,#character,#char,.big{
+#movie,#book{
+    display:inline-block;
+    width:400px;
+}
+.container{
     display:flex;
     justify-content:center;
 }
@@ -15,4 +19,58 @@ body{
     background-image:url("superback.jpg");
     background-size:cover;
     background-repeat:no-repeat;
+    text-align: center;
+    color:white;
 }
+.error{
+    height:200px;
+}
+.plot{
+ font-size:22px;   
+}
+p{
+    color:black;
+}
+h2{
+    color:#ebff38;
+}
+#search{
+    background-color:blue;
+    color:red;
+    border:yellow 2px solid;
+    font-size:15px;
+}
+.dropbtn {
+  background-color:yellow;
+  color: red;
+  padding: 16px;
+  font-size: 15px;
+  border: blue 2px solid;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content p {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content p:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
